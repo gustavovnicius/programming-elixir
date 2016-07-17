@@ -5,10 +5,6 @@ fizzbuzzer = fn
   _, _, c -> c
 end
 
-rem = fn
-  {a, b} -> div(a, b)
-end
-
 fizzbuzz = fn n -> fizzbuzzer.(rem(n, 3), rem(n, 5), n) end
 
 fizzbuzz.(10)
